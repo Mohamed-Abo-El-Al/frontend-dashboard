@@ -1,0 +1,158 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: sans-serif;
+}
+body {
+  background-color: #001;
+  display: flex;
+}
+.imagebox {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 4px solid gold;
+  overflow: hidden;
+    flex-shrink: 0;
+
+}
+.imagebox img {
+  width: 100%;
+
+}
+/* انا هنا يعتبر عملت شكل المنيو الي قدامنا الي هوا ظبط طولهم وعرضهم وعملتلهم ازاحه  */
+.menu {
+  background-color: rgb(23, 38, 52);
+  width: 60px;
+  height: 100vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden ;
+    transition: width 2s ease;
+
+}
+.menu:hover{
+    width: 260px;
+    transition: 1s;
+}
+/* شلت النقط بتاعت ال ul  */
+ul {
+  list-style: none;
+  height: 95%;
+}
+ul li a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+ul li a:hover {
+  background-color: #808070;
+}
+.logout {
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+}
+.logout a {
+  background-color: rgb(218, 0, 15);
+}
+
+ul li i {
+  font-size: 35px;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+}
+.contant{
+    width: 100%;
+}
+.title-info{
+    color: #001;
+     background-color: rgb(121, 222, 222);
+     padding: 10px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     margin: 10px 0;
+     border: 8px; 
+
+}
+.title-info p {
+    color: #001;
+    font-size: 30px;
+}
+.title-info i{
+        color: #001;
+
+
+}
+.data-inf {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.data-inf .box{
+    background-color: #131e62;
+    height: 150px;
+    flex-basis: 150px;
+    flex-grow: 1;
+    border-radius: 19px;
+    display: flex  ;
+    align-items: center;
+    justify-content: space-around
+}
+.data-inf .box:hover{
+  background-color: #283fd7;
+  
+
+}
+.data-inf .box i{
+    font-size: 40px;
+}
+.data-inf .box.data{
+    text-align: center;
+}
+.data-inf .box .data span{
+     font-size: 40px;
+ 
+}
+table{
+    width: 100%;
+    text-align: center;
+    border-spacing: 15px;
+}
+td ,th {
+    background-color: #123;
+    height: 40px;
+        border-radius: 15px;
+
+
+}
+th {
+    background-color: rgb(23, 55, 214);
+}
+td:hover{
+    background-color: rgb(15, 129, 170);
+}
+.price.count  {
+    padding:6px ;
+    border-radius: 8px;
+}
+.price {
+    background-color: rgb(95, 15, 161);
+}
+.count{
+    background-color: rgb(90, 80, 19);
+}
+
